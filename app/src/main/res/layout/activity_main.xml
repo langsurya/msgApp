@@ -5,14 +5,32 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:padding="10dp">
 
     <Button
-            android:text="Show Toast"
+            android:id="@+id/btnShowToast"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignParentTop="true"
-            android:id="@+id/btnShowToast"
-            android:layout_marginTop="63dp"/>
+            android:layout_marginTop="63dp"
+            android:text="Show Toast"/>
+
+    <EditText
+            android:id="@+id/etUserMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="165dp"
+            android:ems="10"
+            android:hint="Enter Your Message"/>
+
+    <Button
+            android:id="@+id/btnSendMsgToNextActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Send Data To Next Activity"/>
 </RelativeLayout>
